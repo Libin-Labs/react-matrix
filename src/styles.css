@@ -1,0 +1,44 @@
+.lp-matrix {
+  --lp-matrix-border: #b8c2ce;
+  --lp-matrix-accent: #1d4ed8;
+  --lp-matrix-selected: #dbeafe;
+  color: #172033;
+  font:
+    1rem/1.5 system-ui,
+    sans-serif;
+}
+.lp-matrix-scroll {
+  overflow: auto;
+}
+.lp-matrix table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.lp-matrix th,
+.lp-matrix td {
+  border: 1px solid var(--lp-matrix-border);
+  padding: 0.5rem;
+  text-align: center;
+}
+.lp-matrix button {
+  min-width: 3rem;
+  min-height: 2.5rem;
+  font: inherit;
+}
+.lp-matrix [aria-pressed='true'] {
+  background: var(--lp-matrix-selected);
+  font-weight: bold;
+}
+.lp-matrix button:focus-visible {
+  outline: 3px solid var(--lp-matrix-accent);
+  outline-offset: 2px;
+}
+.lp-matrix [aria-disabled='true'] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.lp-matrix-group {
+  display: block;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
